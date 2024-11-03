@@ -11403,6 +11403,38 @@ pre .code {
 .navbar .brand {
   text-align: center;
 }
+/* Default avatar style */
+.brand-img {
+  width: 120px;
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+  transition: width 0.3s ease; /* Smooth resizing */
+}
+
+/* Media queries for responsive resizing */
+@media (max-width: 992px) { /* Large tablets and small laptops */
+  .brand-img {
+      width: 100px;
+  }
+}
+
+@media (max-width: 768px) { /* Tablets and larger phones */
+  .brand-img {
+      width: 80px;
+  }
+}
+
+@media (max-width: 576px) { /* Smaller mobile devices */
+  .brand-img {
+      width: 60px;
+  }
+}
+
+@media (max-width: 400px) { /* Very small devices */
+  .brand-img {
+      width: 50px;
+  }
+}
 
 .navbar .brand .brand-img {
   position: absolute;
@@ -11491,8 +11523,8 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(header.JPG);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(header.JPG);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(header.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(header.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11666,4 +11698,6 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+
+
 }
