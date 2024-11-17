@@ -11522,8 +11522,8 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(header.JPG);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(header.JPG);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(header.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(header.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11567,6 +11567,12 @@ pre .code {
   margin-bottom: 40px;
 }
 
+.header-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 @media (max-width: 767.98px) {
   .header {
     height: 500px;
