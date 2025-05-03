@@ -11698,6 +11698,16 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+.profile-pic {
+  opacity: 1 !important;
+  display: block !important;
+  position: relative !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 150px;
+  margin: auto;
+}
 
 
 }
